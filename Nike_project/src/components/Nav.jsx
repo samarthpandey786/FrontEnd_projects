@@ -10,7 +10,7 @@ const Nav = () => {
   // Handle window resize to track mobile view
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 1024)
+      setIsMobileView()
     }
 
     window.addEventListener('resize', handleResize)
