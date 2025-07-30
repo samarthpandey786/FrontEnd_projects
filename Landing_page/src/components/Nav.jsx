@@ -1,14 +1,14 @@
 import React from 'react'
-import Logo from "../assets/brand_logo.png"
+import Logo from "../assets/images/brand_logo.png"
 function Nav() {
   return (
-    <div >
+    <div>
       <nav className='mt-6'>
         <div className='Logo flex items-start mx-20'>
           <img src={Logo} alt="brand-logo" />
         </div>
         <div >
-        <ul className='flex  relative col-span-4 gap-4 justify-center mt-[-40px]'>
+        <ul className='flex  relative col-span-4 gap-7 justify-center mt-[-40px]'>
           <li>Menu</li>
           <li>Location</li>
           <li>About</li>
