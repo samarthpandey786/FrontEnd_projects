@@ -54,46 +54,41 @@ function Home() {
         VIA EMAIL FORM
       </button>
 
-       
+        <form action="" 
+        className="flex flex-col gap-4"
+         onSubmit={onSubmit}
+        > 
+          <input
+            type="text"
+            placeholder="Name"
+            className="border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-black"
+          />
+          <input
+            type="email"
+            placeholder="E-Mail"
+            className="border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-black"
+          />
+          <textarea
+            placeholder="TEXT"
+            rows="4"
+            className="border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-black"
+          ></textarea>
+          <button className="bg-black text-white py-2 rounded hover:bg-gray-800"
+            
+          >SUBMIT</button>
+        </form>
+          </div>
 
-      {/* Form Inputs */}
-      <form action="" 
-      className="flex flex-col gap-4"
-       onSubmit={onSubmit}
-      > 
-       
-      
-        <input
-          type="text"
-          placeholder="Name"
-          className="border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-black"
-        />
-        <input
-          type="email"
-          placeholder="E-Mail"
-          className="border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-black"
-        />
-        <textarea
-          placeholder="TEXT"
-          rows="4"
-          className="border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-black"
-        ></textarea>
-        <button className="bg-black text-white py-2 rounded hover:bg-gray-800"
-          
-        >SUBMIT</button>
-      </form>
-    </div>
+          <div className="bg-black border-2 border-gray-200 p-6 w-[22%]  justify-center text-2xl font-mono absolute left-[39%] bottom-[49%] text-white rounded-lg">
+         { name && <p className="text-sm text-gray-500">Name: {name}</p>}
+         { email && <p className="text-sm text-gray-500 ">Email: {email}</p>}
 
-    <div className="bg-black border-2 border-gray-200 p-6 w-[20%]  justify-center text-2xl font-mono absolute left-[40%] bottom-[50%] text-white rounded-lg">
-   { name && <p className="text-sm text-gray-700">Name: {name}</p>}
-   { email && <p className="text-sm text-gray-700 ">Email: {email}</p>}
-
-   { text && <p className="text-sm text-emerald-700">{`Our Team will contact you  ${name} soon `}</p>}
-  </div>
-
-   
-
-    {/* Right Side: Image */}
+         <p className="text-sm text-emerald-700">
+           {text === "Hi! NIKE is here to help you ❤️" || !text
+         ? "Hi! NIKE is here to help you ❤️"
+         : `Our Team will contact you ${name} soon`}
+         </p>
+        </div>
     <div className="w-[40%] bg-white flex justify-center items-center mt-14">
       <img src={contactImg} alt="Support Illustration" className="w-full h-auto object-contain" />
     </div>
