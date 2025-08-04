@@ -57,8 +57,8 @@ const Nav = () => {
 
       {/* Mobile Dropdown Menu */}
         <ul
-            className={`flex flex-col gap-4 mt-4 bg-gray-700 text-white p-6 rounded-lg max-w-[90%] mx-auto lg:hidden text-2xl font-thin overflow-hidden transition-all duration-500 ease-in-out
-                ${isMobileView ? (isMobileMenuOpen ? 'max-h-[500px] opacity-100 visible' : 'max-h-0 opacity-0 invisible') : 'hidden'}
+            className={`flex flex-col items-end gap-4 mt-4 bg-gray-700 text-white p-6 rounded-lg max-w-[90%] mx-auto lg:hidden text-2xl font-thin overflow-hidden transition-all duration-500 ease-in-out
+                ${isMobileView ? (isMobileMenuOpen ? 'max-h-[500px] opacity-100 visible' : 'max-h-0 opacity-0 invisible ') : 'hidden'}
             `}
             >
             {navLinks.map((list_item) => (
