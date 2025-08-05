@@ -10,7 +10,8 @@ const PopularProductCard = ({ imgURL, name, Price, rating }) => {
       <img
         src={imgURL}
         alt={name}
-        className="w-[200px] h-[280px] object-cover rounded-xl"
+        className="w-[500px] h-[280px] object-cover rounded-xl hover:scale-105
+         transition-transform duration-800 hover:border-coral-red hover:border-2 hover:transition hover:duration-300"
       />
 
       <div className="mt-4 flex items-center gap-2">
@@ -19,7 +20,7 @@ const PopularProductCard = ({ imgURL, name, Price, rating }) => {
       </div>
 
       <h3 className="mt-2 text-xl font-semibold font-mono text-white">{name}</h3>
-      <p className="mt-1 text-xl font-bold font-mono text-coral-red">{Price}</p>
+      <p className="mt-1 text-xl font-bold font-mono text-white">{Price}</p>
     </div>
   );
 };
