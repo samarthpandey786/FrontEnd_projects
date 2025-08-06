@@ -21,8 +21,12 @@ const SpecialOffer = () => {
           Our dedication to excellence ensures that every step you take is supported by the finest materials and cutting-edge technology, making our shoes the perfect choice.
         </p>
         <div className='mt-11 mb-5 flex gap-4'>
-          <Button label="Shop Now"/>
-        <Button label="Learn more"/>
+          <Button label="Shop Now" />
+        <Button label="Learn more " 
+        backgroundColor="bg-white"
+        borderColor="border-slate-gray"
+        textColor="text-black"
+        />
         </div>
         
    </div>
